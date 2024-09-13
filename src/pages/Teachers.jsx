@@ -1,5 +1,13 @@
+import TheachersPageContent from "../components/TheachersPageContent/TheachersPageContent";
+import DocumentTitle from "../components/DocumentTitle/DocumentTitle";
+
 const Teachers = () => {
-  return <div>Teachers</div>;
+  return (
+    <>
+      <DocumentTitle>Learn Lingo Teachers Page</DocumentTitle>
+      <TheachersPageContent />
+    </>
+  );
 };
 
 export default Teachers;
