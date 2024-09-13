@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const BASE_URL = " https://teacherscollection-da9f7-default-rtdb.europe-west1.firebasedatabase.app/";
 
-export instance = axios.create({
+export const instance = axios.create({
     baseURL: BASE_URL,
 });
 
