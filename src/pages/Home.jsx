@@ -1,5 +1,12 @@
+import HomeContent from "../components/HomeContent/HomeContent";
+import DocumentTitle from "../components/DocumentTitle/DocumentTitle";
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <DocumentTitle>Learn Lingo Home Page</DocumentTitle>
+      <HomeContent />
+    </>
+  );
 };
 
 export default Home;
