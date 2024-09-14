@@ -21,7 +21,7 @@ export const fetchAllTeachers = createAsyncThunk(
   }
 );
 
-export const fetchAllTeachersForPagination = createAsyncThunk(
+export const fetchTeachersForPagination = createAsyncThunk(
   "teachers/fetchAllTeachersForPagination",
 
   async (lastKey, thunkAPI) => {

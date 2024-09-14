@@ -22,7 +22,7 @@ import {
   setSelectedLevelOption,
   setSelectedPriceOption,
 } from "../../redux/teachers/slice";
-import css from "./TheachersPageContent.module.css";
+import css from "./TeachersPageContent.module.css";
 
 const TheachersPageContent = () => {
   const dispatch = useDispatch();
