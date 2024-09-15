@@ -3,7 +3,7 @@ import sprite from "../../assets/sprite.svg";
 import defaultImage from "../../assets/avatar.webp";
 
 const ReviewItem = ({ reviewsDetails }) => {
-     console.log(reviewsDetails);
+    
   const { comment, reviewer_name, reviewer_rating, reviewer_avatar } =
     reviewsDetails;
 

@@ -1,0 +1,206 @@
+.container {
+  width: 272px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.teacherContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.imgContainer {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgb(163, 163, 163);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(163, 163, 163);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.teacherTitle {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: var(--gray-color);
+}
+
+.nameText {
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.formTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.radioContainer {
+  position: relative;
+}
+
+.radioList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.radioInput {
+  appearance: none;
+  position: relative;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.radioInput:checked {
+  border: 2px solid var(--main-color);
+  transition: border-color 200ms linear;
+}
+
+.radioInput::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radioInput:checked::before {
+  background-color: var(--main-color);
+  transition: background-color 200ms linear;
+}
+
+.formContainer {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.input {
+  padding: 16px 18px;
+  width: 100%;
+  height: 54px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  outline: none;
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.input::placeholder {
+  color: var(--black-color);
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid rgba(18, 20, 23, 0.2);
+  transition: border 200ms linear;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.errorContainer {
+  position: absolute;
+  bottom: -32px;
+  background-color: var(--gray-background-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.bookBtn {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.bookBtn:hover {
+  background-color: var(--hover-color);
+  transition: background-color 200ms linear;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 472px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .formTitle {
+    font-size: 24px;
+  }
+}

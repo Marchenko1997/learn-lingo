@@ -41,10 +41,12 @@ const TeacherItem = ({ teachersDetails, active, levelOption }) => {
 
   function openModal() {
     setIsOpen(true);
+    scrollController.disabledScroll();
   }
 
   function closeModal() {
     setIsOpen(false);
+    scrollController.enabledScroll();
   }
 
   useEffect(() => {
@@ -86,7 +88,7 @@ const TeacherItem = ({ teachersDetails, active, levelOption }) => {
     <>
       {isOpen && (
         <ModalBookTrialLesson
-          closeModal={closeModal}
+          onCloseModal={closeModal}
           isOpen={isOpen}
           name={name}
           surname={surname}
@@ -148,7 +150,7 @@ const TeacherItem = ({ teachersDetails, active, levelOption }) => {
           <div className={css.detailsContainer}>
             <div className={css.detailsItemContainer}>
               <h3 className={css.detailsTitle}>Speaks:</h3>
-              <p className={css.underlinedText}>{languages.join(", ")}</p>
+              <p className={css.underlinedText}> {languages.join(", ")}</p>
             </div>
             <div className={css.detailsItemContainer}>
               <h3 className={css.detailsTitle}>Lesson Info:</h3>
@@ -186,20 +188,24 @@ const TeacherItem = ({ teachersDetails, active, levelOption }) => {
               )}
             </div>
           )}
+
           {levels && levels.length > 0 && (
             <ul className={css.levelsList}>
-              {levels.map((item, index) => (
-                <li key={index}>
-                  <LevelItem
-                    level={item}
-                    isSelect={
-                      levelOption && item === levelOption.value ? true : false
-                    }
-                  />
-                </li>
-              ))}
+              {levels.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <LevelItem
+                      level={item}
+                      isSelect={
+                        levelOption && item === levelOption.value ? true : false
+                      }
+                    />
+                  </li>
+                );
+              })}
             </ul>
           )}
+
           {readMore && (
             <button
               type="button"
