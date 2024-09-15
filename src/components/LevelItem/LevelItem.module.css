@@ -1,0 +1,18 @@
+.levelItemContainer {
+  border: 1px solid rgba(18, 20, 23, 0.2);
+  border-radius: 35px;
+  padding: 8px 12px;
+}
+
+.levelSelectedItemContainer {
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 35px;
+  padding: 8px 12px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}

@@ -1,9 +1,15 @@
-import React from 'react'
+import css from "./LevelItem.module.css";
 
-const LevelItem = () => {
+const LevelItem = ({ level, isSelect}) => {
   return (
-    <div>LevelItem</div>
-  )
+    <div
+      className={
+        isSelect ? css.levelSelectedItemContainer : css.levelItemContainer
+      }
+    >
+      <p className={css.text}>#{level}</p>
+    </div>
+  );
 }
 
 export default LevelItem
