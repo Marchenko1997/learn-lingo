@@ -11,6 +11,7 @@ import LevelItem from "../LevelItem/LevelItem";
 import { selectAuthIsLoggedIn } from "../../redux/auth/selectors";
 import { selectFavoriteTeachers } from "../../redux/favorites/selctots";
 import { addTeacher, deleteTeacher } from "../../redux/favorites/slice";
+import scrollController from "../../services/noScroll";
 
 const TeacherItem = ({ teachersDetails, active, levelOption }) => {
   const {
