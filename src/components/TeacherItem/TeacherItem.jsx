@@ -9,7 +9,7 @@ import ModalBookTrialLesson from "../../components/ModalBookTrialLesson/ModalBoo
 import ReviewItem from "../ReviewItem/ReviewItem";
 import LevelItem from "../LevelItem/LevelItem";
 import { selectAuthIsLoggedIn } from "../../redux/auth/selectors";
-import { selectFavoriteTeachers } from "../../redux/favorites/selctots";
+import { selectFavoriteTeachers } from "../../redux/favorites/selectors";
 import { addTeacher, deleteTeacher } from "../../redux/favorites/slice";
 import scrollController from "../../services/noScroll";
 

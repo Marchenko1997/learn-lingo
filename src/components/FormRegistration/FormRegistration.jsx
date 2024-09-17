@@ -41,7 +41,8 @@ const FormRegistration = ({ onCloseModal }) => {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  const onSubmit = (data) => {
+    const onSubmit = (data) => {
+    
     dispatch(registerUser(data));
     reset();
     onCloseModal();

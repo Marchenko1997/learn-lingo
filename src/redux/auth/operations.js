@@ -18,7 +18,9 @@ export const registerUser = createAsyncThunk(
         auth,
         email,
         password
-      );
+        );
+        
+
       const user = userCredential.user;
 
       await updateProfile(user, { displayName: name });
@@ -34,6 +36,7 @@ export const registerUser = createAsyncThunk(
 
       return { uid: user.uid, email: user.email, name: user.displayName };
     } catch (error) {
+         
       toast(error.message || "Something went wrong", {
         style: {
           backgroundColor: "red",
