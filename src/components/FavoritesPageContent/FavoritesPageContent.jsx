@@ -40,7 +40,7 @@ const FavoritesPageContent = () => {
 
   const noSelectedFilters = !langOption && !levelOption && !priceOption;
 
-  // console.log(langOption);
+ 
 
   useEffect(() => {
     setFavoriteTeachers(favorites.slice(0, perPage));

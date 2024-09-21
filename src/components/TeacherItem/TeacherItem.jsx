@@ -47,7 +47,7 @@ const TeacherItem = ({ teachersDetails, active, levelOption }) => {
 
   function closeModal() {
     setIsOpen(false);
-    scrollController.enabledScroll();
+   scrollController.enableScroll(); 
   }
 
   useEffect(() => {

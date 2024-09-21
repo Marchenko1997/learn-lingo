@@ -15,7 +15,6 @@ export const fetchAllTeachers = createAsyncThunk(
       }));
       return items;
     } catch (error) {
-      console.log(error);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -36,7 +35,6 @@ export const fetchTeachersForPagination = createAsyncThunk(
         .slice(-4);
       return items;
     } catch (error) {
-      console.log(error);
       return thunkAPI.rejectWithValue(error.message);
     }
   }

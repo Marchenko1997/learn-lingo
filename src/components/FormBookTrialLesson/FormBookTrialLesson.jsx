@@ -37,8 +37,7 @@ const FormBookTrialLesson = ({ name, surname, avatar, onCloseModal }) => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = () => {
     onCloseModal();
   };
 
