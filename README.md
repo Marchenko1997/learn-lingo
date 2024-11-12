@@ -59,7 +59,7 @@ To install and launch the project, you need:
  - Sequence of actions through the terminal:
 
 ```bash
-git clone https://github.com/MolchanovaOlga/learn-lingo.git
+git clone https://github.com/Marchenko1997/learn-lingo
 
 cd your project
 ```
@@ -67,7 +67,7 @@ cd your project
 - To set command execution dependencies:
 
 ```
-install npm
+npm install
 ```
 
 - Configure environment variables for Firebase
